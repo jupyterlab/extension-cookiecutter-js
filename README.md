@@ -1,4 +1,4 @@
-# JupyterLab extension-cookiecutter
+# JupyterLab extension-cookiecutter-js
 
 A [cookiecutter](https://github.com/audreyr/cookiecutter) template for creating a JupyterLab extension.
 
@@ -13,7 +13,7 @@ pip install cookiecutter
 Use cookiecutter to generate a package, following the prompts to fill in the name and authorship of your new JupyterLab extension.
 
 ```
-cookiecutter https://github.com/jupyterlab/extension-cookiecutter
+cookiecutter https://github.com/jupyterlab/extension-cookiecutter-js
 ```
 
 ## A simple example
