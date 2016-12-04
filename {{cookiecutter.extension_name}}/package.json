@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "rimraf": "^2.5.4",
-    "@jupyterlab/extension-builder": "^0.7.0"
+    "@jupyterlab/extension-builder": "^0.10.0"
   }
 }
