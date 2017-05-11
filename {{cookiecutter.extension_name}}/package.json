@@ -1,21 +1,16 @@
 {
-  "private": true,
   "name": "{{ cookiecutter.extension_name }}",
   "version": "0.0.1",
   "description": "{{ cookiecutter.project_short_description }}",
   "author": "{{ cookiecutter.author_name }}",
-  "main": "lib/plugin.js",
+  "main": "lib/index.js",
   "keywords": [
     "jupyter",
     "jupyterlab"
   ],
-  "scripts": {
-    "build": "node build_extension.js",
-    "clean": "rimraf {{ cookiecutter.extension_name }}/static",
-    "prepublish": "npm run build"
+  "jupyterlab": {
+    "extension": true
   },
   "devDependencies": {
-    "rimraf": "^2.5.4",
-    "@jupyterlab/extension-builder": "^0.10.0"
   }
 }
