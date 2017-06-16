@@ -9,6 +9,9 @@
     "jupyter",
     "jupyterlab"
   ],
+  "jupyterlab": {
+    "extension": true
+  },
   "scripts": {},
   "devDependencies": {
   }
