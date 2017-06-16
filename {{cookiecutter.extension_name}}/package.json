@@ -13,6 +13,6 @@
     "extension": true
   },
   "scripts": {},
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
