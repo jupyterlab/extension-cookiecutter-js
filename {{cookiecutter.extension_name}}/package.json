@@ -9,13 +9,7 @@
     "jupyter",
     "jupyterlab"
   ],
-  "scripts": {
-    "build": "node build_extension.js",
-    "clean": "rimraf {{ cookiecutter.extension_name }}/static",
-    "prepublish": "npm run build"
-  },
+  "scripts": {},
   "devDependencies": {
-    "rimraf": "^2.5.4",
-    "@jupyterlab/extension-builder": "^0.10.0"
   }
 }
