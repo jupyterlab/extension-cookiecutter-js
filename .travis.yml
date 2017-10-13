@@ -9,7 +9,8 @@ install:
 - conda update -q conda
 - conda info -a
 - conda install nodejs
-- pip install jupyterlab cookiecutter
+- pip install cookiecutter
+- pip install --pre jupyterlab 
 script:
 - cookiecutter . --no-input
 - jupyter labextension install jupyterlab_myextension
