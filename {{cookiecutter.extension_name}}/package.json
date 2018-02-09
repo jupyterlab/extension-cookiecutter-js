@@ -8,7 +8,7 @@
   "keywords": [
     "jupyter",
     "jupyterlab",
-    "jupyterlab extension"
+    "jupyterlab-extension"
   ],
   "jupyterlab": {
     "extension": true
