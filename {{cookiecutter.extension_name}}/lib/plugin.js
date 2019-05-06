@@ -1,3 +1,5 @@
+require('../style/plugin.css');
+
 module.exports = [{
     id: '{{ cookiecutter.extension_name }}',
     autoStart: true,
