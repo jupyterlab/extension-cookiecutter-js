@@ -25,7 +25,5 @@ The ``lib/`` directory of your new extension includes a very simple example of a
 
 ## Package name
 
-## Package name
-
 We suggest that simple extension names start with `jupyterlab_` and use underscores if needed to improve readability, such as `jupyterlab_myextension`.
 
