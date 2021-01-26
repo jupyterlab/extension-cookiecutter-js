@@ -31,7 +31,7 @@
     "clean:labextension": "rimraf {{ cookiecutter.python_name }}/labextension",
     "clean:all": "jlpm run clean:labextension",
     "install:extension": "jupyter labextension develop --overwrite .",
-    "prepare": "jlpm run clean && jlpm run build:prod",
+    "prepare": "jlpm run build:prod",
     "watch": "watch:labextension",
     "watch:labextension": "jupyter labextension watch ."
   },

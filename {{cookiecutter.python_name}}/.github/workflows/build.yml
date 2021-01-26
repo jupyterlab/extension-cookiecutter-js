@@ -49,7 +49,6 @@ jobs:
     - name: Build the extension
       run: |
         jlpm
-        jlpm run eslint:check
         python -m pip install .
         jupyter labextension list 2>&1 | grep -ie "{{ cookiecutter.labextension_name }}.*OK"
         python -m jupyterlab.browser_check

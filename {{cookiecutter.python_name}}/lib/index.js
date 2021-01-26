@@ -1,10 +1,10 @@
 module.exports = [
   {
-    id: '{{ cookiecutter.extension_name }}',
+    id: '{{ cookiecutter.labextension_name }}',
     autoStart: true,
     activate: function (app) {
       console.log(
-        'JupyterLab extension {{ cookiecutter.extension_name }} is activated!'
+        'JupyterLab extension {{ cookiecutter.labextension_name }} is activated!'
       );
       console.log(app.commands);
     }
