@@ -1,0 +1,23 @@
+include LICENSE
+include README.md
+include pyproject.toml
+include jupyter-config/{{ cookiecutter.python_name }}.json
+
+include package.json
+include install.json
+include ts*.json
+include yarn.lock
+
+graft {{ cookiecutter.python_name }}/labextension
+
+# Javascript files
+graft lib
+graft style
+prune **/node_modules
+
+# Patterns to exclude from any directory
+global-exclude *~
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude .git
+global-exclude .ipynb_checkpoints

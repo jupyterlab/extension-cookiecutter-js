@@ -1,0 +1,7 @@
+node_modules
+**/node_modules
+**/lib
+**/package.json
+**/static
+build
+{{cookiecutter.python_name}}/labextension
