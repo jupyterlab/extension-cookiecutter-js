@@ -32,6 +32,7 @@
     "clean:all": "jlpm run clean:labextension",
     "install:extension": "jupyter labextension develop --overwrite .",
     "prepare": "jlpm run build:prod",
+    "prettier": "prettier --write \"**/*{.js,.jsx,.css,.json,.md}\"",
     "watch": "watch:labextension",
     "watch:labextension": "jupyter labextension watch ."
   },
