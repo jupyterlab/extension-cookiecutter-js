@@ -55,7 +55,7 @@ jobs:
         cookiecutter . --no-input
         cd myextension
         jlpm
-        pip install -e .
+        pip install .
         jupyter labextension list 2>&1 | grep -ie "myextension.*OK"
         python -m jupyterlab.browser_check
         jlpm run install:extension
