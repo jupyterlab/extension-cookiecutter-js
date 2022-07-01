@@ -35,14 +35,12 @@
     "clean:all": "jlpm run clean:labextension",
     "install:extension": "jupyter labextension develop --overwrite .",
     "prepare": "jlpm run build:prod",
-    "prettier": "prettier --write \"**/*{.js,.jsx,.css,.json,.md}\"",
-    "watch": "jlpm run watch:labextension",
+    "watch": "jlpm watch:labextension",
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {},
   "devDependencies": {
     "@jupyterlab/builder": "^3.0.0",
-    "prettier": "^2.1.1",
     "rimraf": "^3.0.2"
   },
   "sideEffects": [
@@ -53,5 +51,13 @@
   "jupyterlab": {
     "extension": true,
     "outputDir": "{{cookiecutter.python_name}}/labextension"
+  },
+  "jupyter-releaser": {
+    "hooks": {
+      "before-build-npm": [
+        "python -m pip install jupyterlab~=3.1",
+        "jlpm"
+      ]
+    }
   }
 }
