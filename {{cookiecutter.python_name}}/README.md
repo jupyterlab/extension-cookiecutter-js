@@ -60,3 +60,13 @@ jupyter lab build --minimize=False
 ```bash
 pip uninstall {{ cookiecutter.python_name }}
 ```
+
+## Updating the version
+
+To update the version, install tbump and use it to bump the version.
+By default it will also create a tag.
+
+```bash
+pip install tbump
+tbump <new-version>
+```
