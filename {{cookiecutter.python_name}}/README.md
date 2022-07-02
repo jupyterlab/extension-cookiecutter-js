@@ -9,7 +9,7 @@
 
 ## Requirements
 
-* JupyterLab >= 3.0
+* JupyterLab >= 3.1
 
 ## Install
 
