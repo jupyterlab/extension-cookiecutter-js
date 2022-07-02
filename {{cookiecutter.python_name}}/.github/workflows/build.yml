@@ -20,4 +20,6 @@ jobs:
         python -m pip install -e .
         jupyter labextension list 2>&1 | grep -ie "{{ cookiecutter.labextension_name }}.*OK"
         python -m jupyterlab.browser_check
+        pip uninstall -y myextension
+        pip install -v -e .
         jupyter labextension develop . --overwrite

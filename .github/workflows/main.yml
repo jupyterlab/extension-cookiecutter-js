@@ -40,5 +40,6 @@ jobs:
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "myextension.*OK"
         python -m jupyterlab.browser_check
+        pip uninstall -y myextension
+        pip install -v -e .
         jupyter labextension develop . --overwrite
-        pip uninstall -y myextension jupyterlab
