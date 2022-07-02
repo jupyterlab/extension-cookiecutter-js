@@ -27,15 +27,15 @@
     "url": "{{ cookiecutter.repository }}.git"
   },
   "scripts": {
-    "build": "jlpm run build:labextension:dev",
-    "build:prod": "jlpm run build:labextension",
+    "build": "npm run build:labextension:dev",
+    "build:prod": "npm run build:labextension",
     "build:labextension": "jupyter labextension build .",
     "build:labextension:dev": "jupyter labextension build --development True .",
     "clean:labextension": "rimraf {{ cookiecutter.python_name }}/labextension",
-    "clean:all": "jlpm run clean:labextension",
+    "clean:all": "npm run clean:labextension",
     "install:extension": "jupyter labextension develop --overwrite .",
-    "prepare": "jlpm run build:prod",
-    "watch": "jlpm watch:labextension",
+    "prepare": "npm run build:prod",
+    "watch": "npm run watch:labextension",
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {},
